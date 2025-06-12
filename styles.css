@@ -1,0 +1,55 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #00425A;
+      color: #EFF5F5;
+      margin: 0;
+    }
+
+    .custom-navbar {
+      background-color: #ffffff;
+      padding: 0.8rem 1rem;
+      z-index: 1030;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-logo {
+      max-height: 50px;
+    }
+
+    .nav-link {
+      color: #00425A !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #FC7300 !important;
+    }
+
+    /* Asegura que el logo esté en la capa superior */
+    .navbar-brand {
+      z-index: 1;
+    }
+
+    /* Media queries para tablet y mobile */
+    @media (max-width: 991.98px) {
+      /* Ocultar menú desktop */
+      .navbar-nav.d-lg-flex {
+        display: none !important;
+      }
+
+      /* Centrar logo móvil */
+      .navbar-brand.d-lg-none {
+        margin: 0.5rem auto;
+      }
+
+      /* Estilizar menú colapsable */
+      .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1rem 0;
+      }
+
+      .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+      }
+    }

@@ -9,16 +9,16 @@
   <link rel="icon" type="image/ico" href="assets/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
+<!-- INICIO DEL NAVBAR-->
   <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand mx-auto" href="#inicio">
-        <img src="assets/UNTREF_Logo.svg" alt="UntrefSchool" class="navbar-logo" />
+        <img src="assets/UNTREF_Logo.svg" alt="UntrefSchool" class="navbar-logo"/>
       </a>
-      <!-- Botón hamburguesa -->
       <button
         class="navbar-toggler"
         type="button"
@@ -29,7 +29,6 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto d-flex flex-row flex-lg-row flex-column flex-lg-row justify-content-center">
           <li class="nav-item px-2">
@@ -45,60 +44,161 @@
             <a class="nav-link" href="#ultimas-noticias">Últimas noticias</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-<header></header>
+  <header>
+    <div class="header-content">
+      <h1>UntrefSchool</h1>
+      <p>
+       Instituto de Educación Primaria
+      </p>
+    </div>
+  </header>
 
-<main class="container py-5">
 
-    <section id="quienes-somos" class="mb-5">
+<main class="container py-4">
+<!-- QUIÉNES SOMOS -->
+<section id="quienes-somos" class="section-box">
+  <div class="flex-column-center container-quienes">
+    <div class="text-block quienes-texto">
       <h2 class="section-title">Quiénes somos</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan nisi vel tortor dignissim, at condimentum justo sollicitudin.</p>
-      <img src="assets/escuela.jpg" alt="Frente de la escuela" class="img-fluid rounded mt-3" />
-    </section>
+      <p>
+        UntrefSchool es un instituto de educación primaria comprometido con el desarrollo integral de sus estudiantes. 
+        Nuestro enfoque educativo promueve la creatividad, el pensamiento crítico y los valores humanos.
+      </p>
+      <p>
+        Contamos con un equipo docente apasionado y capacitado, instalaciones modernas y actividades que enriquecen el aprendizaje.
+      </p>
+    </div>
+    <div class="image-block quienes-imagen">
+      <img src="assets/escuela.jpg" alt="Frente de la escuela" class="img-fluid" />
+    </div>
+  </div>
+</section>
 
-    <section id="por-que-elegirnos" class="mb-5 bg-light p-4 rounded">
+<!-- POR QUÉ ELEGIRNOS -->
+<section id="por-que-elegirnos" class="section-box">
+  <div class="flex-column-center container-elegirnos">
+    <div class="image-block elegirnos-img">
+      <img src="assets/educacion.jpg" alt="Niños aprendiendo en clase" class="img-fluid" />
+    </div>
+    <div class="text-block elegirnos-text">
       <h2 class="section-title">¿Por qué elegirnos?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.</p>
-    </section>
+      <p>
+        En UntrefSchool creemos que la educación primaria es el cimiento del desarrollo humano. 
+        Nuestra institución ofrece un entorno estimulante, seguro y creativo.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <section id="propuesta-educativa" class="mb-5">
-      <h2 class="section-title">Propuesta educativa</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut urna nec lorem porttitor porttitor.</p>
-      <ul>
-        <li>Educación integral</li>
-        <li>Actividades extracurriculares</li>
-        <li>Docentes capacitados</li>
-      </ul>
-    </section>
+<!-- PROPUESTA EDUCATIVA -->
+<section id="propuesta-educativa" class="section-box propuesta-educativa-section">
+  <h2 class="section-title">Propuesta educativa</h2>
+  <p>
+    En UntrefSchool ofrecemos una educación basada en valores, creatividad y excelencia académica. 
+    Nuestro compromiso es formar estudiantes autónomos, críticos y empáticos.
+  </p>
+  <ul>
+    <li>
+      <img src="assets/education.png" alt="Educación integral" class="icono-lista">
+      <span>Educación integral</span>
+    </li>
+    <li>
+      <img src="assets/activities.png" alt="Actividades extracurriculares" class="icono-lista">
+      <span>Actividades extracurriculares</span>
+    </li>
+    <li>
+      <img src="assets/teacher.png" alt="Docentes capacitados" class="icono-lista">
+      <span>Docentes capacitados</span>
+    </li>
+  </ul>
+</section>
 
-    <section id="ultimas-noticias">
-      <h2 class="section-title">Últimas noticias</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra metus at neque luctus bibendum.</p>
-      <img src="assets/actividades.jpg" alt="Niños en clase" class="img-fluid rounded mt-3" />
-    </section>
+<!-- ÚLTIMAS NOTICIAS -->
+<h2 class="section-title">Últimas noticias</h2>
+<section id="ultimas-noticias">
+  <div class="noticias-container">
+    <div class="noticia-card">
+      <img src="assets/noticia2.jpg" alt="Actividad escolar" />
+      <h3>Visita al museo de ciencias</h3>
+      <p>Los alumnos de 6° grado realizaron una salida educativa al museo, donde exploraron salas interactivas sobre ciencia y tecnología.</p>
+      <a href="#" class="btn-leer-mas">Leer más...</a>
+    </div>
+    <div class="noticia-card">
+      <img src="assets/noticia1.jpg" alt="Niños en clase de arte" />
+      <h3>Muestra de arte 2025</h3>
+      <p>La escuela presentó los trabajos de los estudiantes en la exposición anual, con gran participación de familias y docentes.</p>
+      <a href="#" class="btn-leer-mas">Leer más...</a>
+    </div>
+    <div class="noticia-card">
+      <img src="assets/noticia3.jpg" alt="Evento deportivo escolar" />
+      <h3>Jornada deportiva institucional</h3>
+      <p>Se llevó a cabo un día de deportes con juegos inclusivos para todos los niveles, fomentando el trabajo en equipo y la diversión.</p>
+      <a href="#" class="btn-leer-mas">Leer más...</a>
+    </div>
+  </div>
+</section>
 
-  </main>
+<section id="contacto" class="section-box">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-4">
+    <!-- FORMULARIO -->
+    <div class="formulario-contacto w-100 w-md-50">
+      <h2 class="section-title">Formulario de Contacto</h2>
+      <form action="https://formsubmit.co/agusdinatale96@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://tuusuario.github.io/PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL/">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="name" name="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
 
-  <footer class="bg-dark text-white py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <div class="mb-3 mb-md-0">
+    <!-- FOOTER -->
+    <footer class="footer-contacto w-100 w-md-50 bg-dark text-white p-4 rounded">
+      <div class="mb-3">
+        <h3 class="section-title">Información de contacto</h3>
+        <p><i class="bi bi-envelope-fill me-2"></i>Email: contacto@untrefschool.edu.ar</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>Tel: (011) 1234-5678</p>
+      </div>
+
+      <div class="mb-3">
+        <h4>Seguinos</h4>
         <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
         <a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
       </div>
-      <div class="text-center mb-3 mb-md-0">UntrefSchool &copy; 2025</div>
-      <div class="text-end">
-        <p class="mb-0">Email: contacto@untrefschool.edu.ar</p>
-        <p class="mb-0">Tel: (011) 1234-5678</p>
-      </div>
-    </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="mapa-ubicacion mt-3">
+        <h4>Ubicación</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.868168265976!2d-58.448264!3d-34.607568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e1b6b70a3%3A0x7eab1fce74c5ec18!2sUNTREF%20Centro!5e0!3m2!1ses!2sar!4v1685582046573!5m2!1ses!2sar" 
+          width="100%" 
+          height="200" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
